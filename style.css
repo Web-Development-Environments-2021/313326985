@@ -107,6 +107,56 @@ li a {
 	cursor: pointer;
   }
 
+.intro
+{
+	text-align: left;
+	padding-left: 50%;
+}
+
+.table
+{
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	display:table;
+	border:1px solid #ccc
+}
+.table tr
+{
+	border-bottom:1px solid #ddd
+}
+
+.table tr:nth-child(odd){
+	background-color:#fff
+}
+
+.table tr:nth-child(even){
+	background-color:#f1f1f1
+}
+
+.table td, .table th
+{
+	padding:8px 8px;
+	display:table-cell;
+	text-align:left;
+	vertical-align:top
+}
+
+.table td:first-child, .table th:first-child
+{
+	padding-left:16px
+}
+
+.hoverable tbody tr:hover,.hoverable li:hover
+{
+	background-color:#ccc;
+}
+
+.card
+{
+	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+
 
 section
 {
@@ -165,7 +215,7 @@ section
 
 .center {
 	position:absolute;
-	top: 50%;
+	top: 280px;
 	width: 100%;
 	text-align: center;
 	font-size: 40px;
