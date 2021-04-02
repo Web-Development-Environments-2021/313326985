@@ -1,7 +1,251 @@
-#menu
-{
-	position: fixed;
+
+.menu {
 	width: 100%;
-	height: 35px;
-	background: white;
+	height: 50px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	overflow: hidden;
+	position: fixed;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0 7px 0 rgba(0, 0, 0, 0.2);
+	z-index: 1;
+  }
+  
+
+li {
+	float: right;
+	display: inline;
+  }
+
+li a {
+	display: block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	letter-spacing: 4px;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: "Inconsolata", sans-serif;
+  }
+
+
+  li a:hover {
+	background-color: rgb(197, 196, 196, 0.3);
+  }
+.galary-img{
+	margin-bottom: -6px;
+	opacity: 0.8;
+	cursor: pointer;
+	transition: 0.3s;
 }
+.galary-img:hover{
+	opacity: 1
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+	from {transform: scale(0.1)} 
+	to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+
+section
+{
+	color: rgb(0, 0, 0);
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: "Inconsolata", sans-serif;
+	text-align: center;	
+
+}
+
+.up
+{
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+	color:#000!important;
+	background-color:#f1f1f1!important;
+	transition: 0.4s;
+}
+
+.up:hover
+{
+	color:rgb(0, 0, 0)!important;
+	background-color:#ffffff!important;
+	border-radius: 50px;
+
+}
+
+
+.black
+{
+	background-color: black;
+	color: white;
+	text-align: center;	
+	letter-spacing: 3px;
+}
+
+.contact
+{
+	color:rgb(255, 255, 255)!important;
+}
+
+.contact:hover
+{
+	color:rgb(199, 199, 199)!important;
+}
+
+.center {
+	position:absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 5px;
+	background-color: rgb(255, 255, 255, 0.7);
+	background-size: inherit;
+	z-index: -1;
+  }
+
+  .or-img
+  {
+	opacity: 0.6;
+	width: 100%;
+	height: 75%;
+	z-index: -1;
+	position: sticky;
+  }
+
+  	.animate-top
+  	{
+	  position:relative;
+	  animation:animatetop 0.4s
+	}@keyframes animatetop{
+		from{top:-300px;opacity:0} 
+		to{top:0px;opacity:1}}
+
+	.animate-opacity
+	{
+		animation:opac 0.8s
+	}@keyframes opac{
+		from{opacity:0} 
+		to{opacity:1}}
+
+h1
+{
+	text-align: center;	
+	letter-spacing: 3px;
+	border-bottom:1px solid #ccc!important;
+}
+
+input[type="text"]
+{
+	font-size: 15px;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px;
+}
+input[type="text"]:hover
+{
+	border-color: rgba(0, 0, 0);
+
+}
+
+input[type="reset"], [type="submit"]
+{
+	font-size: 15px;
+	width: 25%;
+	padding: 12px 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-style:hidden;
+	background-color: black;
+	color: white;
+}
+
+input[type="reset"]:hover, [type="submit"]:hover
+{
+	background-color:rgb(187, 187, 187) ;
+	color: black;
+}
+form
+{
+	text-align: center;	
+}
+
+
+
+
+
